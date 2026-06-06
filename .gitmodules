@@ -1,0 +1,39 @@
+[submodule "external/cpr"]
+	path = external/cpr
+	url = https://github.com/libcpr/cpr.git
+[submodule "external/curl"]
+	path = external/curl
+	url = https://github.com/curl/curl.git
+[submodule "external/freetype"]
+	path = external/freetype
+	url = https://github.com/freetype/freetype.git
+[submodule "external/glaze"]
+	path = external/glaze
+	url = https://github.com/stephenberry/glaze.git
+[submodule "external/harfbuzz"]
+	path = external/harfbuzz
+	url = https://github.com/harfbuzz/harfbuzz.git
+[submodule "external/imgui/imgui"]
+	path = external/imgui/imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule "external/lunasvg"]
+	path = external/lunasvg
+	url = https://github.com/sammycage/lunasvg.git
+[submodule "external/rlottie"]
+	path = external/rlottie
+	url = https://github.com/Samsung/rlottie.git
+[submodule "external/spdlog"]
+	path = external/spdlog
+	url = https://github.com/gabime/spdlog.git
+[submodule "external/luajit"]
+	path = external/luajit
+	url = https://github.com/LuaJIT/LuaJIT.git
+[submodule "external/rmlui"]
+	path = external/rmlui
+	url = https://github.com/mikke89/RmlUi.git
+[submodule "external/sdl"]
+	path = external/sdl
+	url = https://github.com/libsdl-org/SDL.git
+[submodule "external/sdl_image"]
+	path = external/sdl_image
+	url = https://github.com/libsdl-org/SDL_image.git
