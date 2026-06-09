@@ -1,0 +1,12 @@
+diff --git a/lib/CMakeLists.txt b/lib/CMakeLists.txt
+index 0400971d4..fcd8a8684 100644
+--- a/lib/CMakeLists.txt
++++ b/lib/CMakeLists.txt
+@@ -338,6 +338,7 @@ if(CURL_ENABLE_EXPORT_TARGET)
+       LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+       RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+     )
++    install(FILES $<TARGET_PDB_FILE:${LIB_SHARED}> DESTINATION "${CMAKE_INSTALL_BINDIR}" OPTIONAL)
+   endif()
+ 
+   export(TARGETS ${libcurl_export}

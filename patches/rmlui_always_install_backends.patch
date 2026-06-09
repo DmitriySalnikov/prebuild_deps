@@ -1,0 +1,12 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index bf84d5b5..1bb11070 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -208,3 +208,7 @@ if(RMLUI_INSTALL_DEPENDENCIES_DIR)
+ endif()
+ 
+ install_runtime_dependencies()
++
++install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/Backends"
++	DESTINATION "${CMAKE_INSTALL_DATADIR}/RmlUi/"
++)

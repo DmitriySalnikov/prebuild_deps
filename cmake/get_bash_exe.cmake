@@ -1,0 +1,12 @@
+set(BASH_EXE bash)
+if(WIN32)
+  find_package(Git REQUIRED)
+  get_filename_component(GIT_DIR "${GIT_EXECUTABLE}" DIRECTORY)
+  find_program(BASH_EXE_windows NAMES bash.exe HINTS "${GIT_DIR}/../bin")
+
+  if(BASH_EXE_windows)
+    set(BASH_EXE ${BASH_EXE_windows})
+  else()
+    message(FATAL_ERROR "bash.exe not found!")
+  endif()
+endif()

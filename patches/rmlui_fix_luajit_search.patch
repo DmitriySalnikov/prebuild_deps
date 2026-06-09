@@ -1,0 +1,13 @@
+diff --git a/CMake/Modules/FindLuaJIT.cmake b/CMake/Modules/FindLuaJIT.cmake
+index fe9df1b8..d73e0a0c 100644
+--- a/CMake/Modules/FindLuaJIT.cmake
++++ b/CMake/Modules/FindLuaJIT.cmake
+@@ -4,7 +4,7 @@
+ #  LUAJIT_LIBRARY - the lua library
+ 
+ FIND_PATH(LUAJIT_INCLUDE_DIR NAMES luajit.h PATH_SUFFIXES luajit luajit-2.0 luajit-2.1)
+-SET(_LUAJIT_STATIC_LIBS libluajit-5.1.a libluajit.a liblua51.a)
++SET(_LUAJIT_STATIC_LIBS lua51 lua51.lib libluajit-5.1.a libluajit.a liblua51.a)
+ SET(_LUAJIT_SHARED_LIBS luajit-5.1 luajit lua51)
+ IF(USE_STATIC_LIBS)
+ 	FIND_LIBRARY(LUAJIT_LIBRARY NAMES ${_LUAJIT_STATIC_LIBS} ${_LUAJIT_SHARED_LIBS})
